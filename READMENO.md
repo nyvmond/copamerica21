@@ -1,7 +1,6 @@
-# Getting Started with Create React App Copa America 21
+# Getting Started with Create React App
 
-This projets will show the teams, matches and results matches. this repository is the front of the app.
-The back is on my computer and will be available for testing, between 7:00 p.m. and 11:00 p.m. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
