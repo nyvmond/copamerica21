@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="copa_logo.png"  alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Datos de <code>Copa America</code> 2021.
         </p>
         <a
           className="App-link"
