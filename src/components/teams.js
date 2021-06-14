@@ -29,8 +29,7 @@ function Teams() {
   }
 
   return (
-    <div>
-      
+    <div>  
       <div className="boxcontainer">
         {teams &&
           teams.map((equip) => {
