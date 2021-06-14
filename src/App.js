@@ -1,22 +1,26 @@
-// import logo from './logo.svg';
-import './App.css';
+import logo from "./copa_logo.png";
+import { Link, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import Teams from './components/Teams'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="copa_logo.png"  alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Datos de <code>Copa America</code> 2021.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+      </div>
+      <div>
+        <Link to='/home'>Copa América</Link>
+        <Route exact path='/home'><Home /></Route>     
+        <Route exact path='/equipos'><Teams /></Route>  
+        <Route exact path='/partidos'><Home /></Route>  
+        <Route exact path='/resultados'><Home /></Route>  
+              </div>
       </header>
     </div>
   );
