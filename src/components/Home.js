@@ -1,13 +1,9 @@
-import {Link} from 'react-router-dom'
+import Nav from './Nav'
 
 function Home() {
   return (
     <div>
-      <div>Navigatios</div>
-      <Link to='/equipos'>Participan</Link>
-      <Link to='/partidos'>Partidos</Link>
-      <Link to='/resultados'>Resultados</Link>
-      <div>Contenido</div>
+      <Nav />
     </div>
   );
 }

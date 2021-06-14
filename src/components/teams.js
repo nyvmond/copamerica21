@@ -1,31 +1,46 @@
 import { useState, useEffect } from "react";
+import Team from "./Team";
+import "../styles/Team.css";
 
 function Teams() {
   const [hasError, setErrors] = useState(false);
   const [teams, setTeams] = useState({});
-  
-  async function fetchData() {
-    const res = await fetch("http://cursohenry.ddns.net:3001/teams");
-    res
-      .json()
-      .then(res => setTeams(res))
-      .catch(err => setErrors(err));
+  const [isLoading, setIsLoading] = useState(false);
+
+  function fetchData() {
+    fetch("http://cursohenry.ddns.net:3001/teams")
+      .then((response) => response.json())
+      .then((json) => {
+        setTeams(json);
+        setIsLoading(true);
+      })
+      .catch((err) => setErrors(err));
   }
 
   useEffect(() => {
     fetchData();
-  },[]);
+  }, []);
+
+  if (!isLoading) {
+    return null;
+  }
+  if (hasError) {
+    return null;
+  }
 
   return (
     <div>
-      <div>Equipos</div>
-            <div>
-        {
-        teams && teams.map(equip => {return <div key={equip.idTeam}>{equip.team}</div> }) 
-      }
+      
+      <div className="boxcontainer">
+        {teams &&
+          teams.map((equip) => {
+            return (
+              <div key={equip.idTeam}>
+                <Team team={equip.team} flag={equip.flag} info={equip.info} />
+              </div>
+            );
+          })}
       </div>
-      <hr />
-      <span>Has error: {JSON.stringify(hasError)}</span>
     </div>
   );
 }
