@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/copamerica21/static/css/main.1b8a7afa.chunk.css",
+    "main.js": "/copamerica21/static/js/main.81548ea4.chunk.js",
+    "main.js.map": "/copamerica21/static/js/main.81548ea4.chunk.js.map",
+    "runtime-main.js": "/copamerica21/static/js/runtime-main.8060bc19.js",
+    "runtime-main.js.map": "/copamerica21/static/js/runtime-main.8060bc19.js.map",
+    "static/js/2.96ccb230.chunk.js": "/copamerica21/static/js/2.96ccb230.chunk.js",
+    "static/js/2.96ccb230.chunk.js.map": "/copamerica21/static/js/2.96ccb230.chunk.js.map",
+    "static/js/3.ca3f954a.chunk.js": "/copamerica21/static/js/3.ca3f954a.chunk.js",
+    "static/js/3.ca3f954a.chunk.js.map": "/copamerica21/static/js/3.ca3f954a.chunk.js.map",
+    "index.html": "/copamerica21/index.html",
+    "static/css/main.1b8a7afa.chunk.css.map": "/copamerica21/static/css/main.1b8a7afa.chunk.css.map",
+    "static/js/2.96ccb230.chunk.js.LICENSE.txt": "/copamerica21/static/js/2.96ccb230.chunk.js.LICENSE.txt",
+    "static/media/copa_logo.70c78685.png": "/copamerica21/static/media/copa_logo.70c78685.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8060bc19.js",
+    "static/js/2.96ccb230.chunk.js",
+    "static/css/main.1b8a7afa.chunk.css",
+    "static/js/main.81548ea4.chunk.js"
+  ]
+}
